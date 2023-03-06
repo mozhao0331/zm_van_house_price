@@ -5,7 +5,8 @@ import altair as alt
 
 # Read data
 df = pd.read_csv("data/van_house_data.csv")
-df = df = df.sample(n=4000, random_state=123)
+# data process
+# df = df = df.sample(n=4000, random_state=123)
 df['REPORT_YEAR'] = df['REPORT_YEAR'].astype('category')
 df['YEAR_BUILT'] = df['YEAR_BUILT'].astype('category')
 
