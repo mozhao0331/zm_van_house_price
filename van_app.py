@@ -5,6 +5,7 @@ import altair as alt
 
 # Read data
 df = pd.read_csv("data/van_house_data.csv")
+
 # data process
 # df = df = df.sample(n=4000, random_state=123)
 df = df.sort_values('YEAR_BUILT')
@@ -77,16 +78,16 @@ app.layout = (
                 # first plot
                 html.Iframe(
                     id='plot1',
-                    style={'border-width': '10',
-                        'width': '100%', 
-                        'height': '400px'}),
+                    style={'border-width': '20',
+                        'width': '40%', 
+                        'height': '150px'}),
                 
                 # second plot
                 html.Iframe(
                     id='plot2',
-                    style={'border-width': '10',
-                        'width': '100%', 
-                        'height': '400px'})
+                    style={'border-width': '20',
+                        'width': '40%', 
+                        'height': '150px'})
             ],
         ),
     ]
