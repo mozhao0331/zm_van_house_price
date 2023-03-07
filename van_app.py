@@ -79,15 +79,15 @@ app.layout = (
                 html.Iframe(
                     id='plot1',
                     style={'border-width': '20',
-                        'width': '40%', 
-                        'height': '150px'}),
+                        'width': '60%', 
+                        'height': '200px'}),
                 
                 # second plot
                 html.Iframe(
                     id='plot2',
                     style={'border-width': '20',
-                        'width': '40%', 
-                        'height': '150px'})
+                        'width': '60%', 
+                        'height': '200px'})
             ],
         ),
     ]
