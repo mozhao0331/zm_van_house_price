@@ -18,7 +18,7 @@ legal_type = df['LEGAL_TYPE'].unique()
 year_built = df['YEAR_BUILT'].unique()
 
 # Build the components
-app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+app = Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
 
 app.layout = (
     html.Div(
@@ -108,7 +108,7 @@ def plot_altair(year_built, price_range):
     chart1 = alt.Chart(df_filtered).mark_bar().encode(
         x=alt.X("CURRENT_LAND_VALUE", title="Current Land Value"),
         y=alt.Y("REPORT_YEAR", title="Report Year"),
-        tooltip='REPORT_YEAR'
+        tooltip='CURRENT_LAND_VALUE'
     ).properties(
         title="Land Value by Year"
     )
@@ -116,7 +116,7 @@ def plot_altair(year_built, price_range):
     chart2 = alt.Chart(df_filtered).mark_bar().encode(
         x=alt.X("CURRENT_LAND_VALUE", title="Current Land Value"),
         y=alt.Y("LEGAL_TYPE", title="Legal Type"),
-        tooltip='LEGAL_TYPE'
+        tooltip='CURRENT_LAND_VALUE'
     ).properties(
         title="Land Value by Legal Type"
     )
