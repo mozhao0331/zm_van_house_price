@@ -7,6 +7,7 @@ import altair as alt
 df = pd.read_csv("data/van_house_data.csv")
 # data process
 # df = df = df.sample(n=4000, random_state=123)
+df = df.sort_values('YEAR_BUILT')
 df['REPORT_YEAR'] = df['REPORT_YEAR'].astype('category')
 df['YEAR_BUILT'] = df['YEAR_BUILT'].astype('category')
 
@@ -16,8 +17,7 @@ legal_type = df['LEGAL_TYPE'].unique()
 year_built = df['YEAR_BUILT'].unique()
 
 # Build the components
-app = Dash(__name__, 
-           external_stylesheets=[dbc.themes.DARKLY])
+app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 
 app.layout = (
     html.Div(
@@ -44,8 +44,7 @@ app.layout = (
                         html.Div(children="Year Built", className="menu-drop"),
                         dcc.Dropdown(id='year_built',
                             options=year_built,
-                            value=1999,
-                            placeholder='Select')
+                            value=1999)
                     ]
                 ),
             ],
