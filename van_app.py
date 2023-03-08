@@ -18,7 +18,7 @@ legal_type = df['LEGAL_TYPE'].unique()
 year_built = df['YEAR_BUILT'].unique()
 
 # Build the components
-app = Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
+app = Dash(__name__, external_stylesheets=[dbc.themes.CERULEAN])
 
 app.layout = (
     html.Div(
@@ -49,6 +49,7 @@ app.layout = (
                     ]
                 ),
             ],
+            className="menu1",
         ),
         
         # create slide bar for price
@@ -70,6 +71,7 @@ app.layout = (
                     ]
                 ),
             ],
+            className="menu2",
         ),
         
         # plots
@@ -122,6 +124,8 @@ def plot_altair(year_built, price_range):
     )
     
     return chart1.to_html(), chart2.to_html()
+
+# app.config.external_stylesheets=[dbc.themes.DARKLY]
 
 if __name__ == '__main__':
     app.run_server(debug=True)
