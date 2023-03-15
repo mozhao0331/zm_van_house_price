@@ -55,3 +55,7 @@ If you have any questions, feedback, or suggestions about our Vancouver Housing 
 ## License
 
 Licensed under the terms of the MIT license.
+
+## Reference
+
+The data set I am going to visualize is the data set contains information on properties from [BC Assessment (BCA) and City sources](https://opendata.vancouver.ca/api/v2/console) from 2020. There are 871,053 observation in this data set. Each data point has 29 associated variables that describe the property.
