@@ -1,6 +1,6 @@
 # Vancouver Housing Market Dashboard
 
--   Authors: Morris Zhao
+-   Author: Morris Zhao
 
 Thank you for being interested in the Vancouver Housing Market App!
 
