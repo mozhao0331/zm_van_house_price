@@ -4,7 +4,7 @@
 
 Thank you for being interested in the Vancouver Housing Market App!
 
-Render Link click [here](https://github.com/mozhao0331/zm_van_house_price/blob/main/reports/proposal.md)
+Render Link click [here](van-house.onrender.com/)
 
 The app is designed to provide an interactive and informative way to explore the Vancouver housing market. Whether you're a real estate professional, a data analyst, or simply curious about housing trends in Vancouver, our app has something for you.
 
@@ -14,7 +14,7 @@ The purpose of the app is to provide a user-friendly, interactive, and informati
 
 The motivation for developing this app was to create a comprehensive and informative app that can serve as a valuable resource for anyone interested in understanding Vancouver's housing market. The app is designed to be user-friendly and interactive, with a range of visualizations that help users make sense of the presented information. Ultimately, the goal is to help users stay informed about the state of the market and make better-informed decisions.
 
-More details can be found in the proposal [here](https://github.com/UBC-MDS/van_houses/blob/main/reports/proposal.md).
+More details can be found in the proposal [here](https://github.com/mozhao0331/zm_van_house_price/blob/main/reports/proposal.md).
 
 ## Description & Usage
 
